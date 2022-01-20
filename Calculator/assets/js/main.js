@@ -145,7 +145,7 @@ document.getElementById('equal').addEventListener('click', () => {
 
 const tooltip = document.getElementsByClassName('tooltip')[0];
 function restoreText() {
-    tooltip.textContent = 'Click To Copy ❤';
+    tooltip.textContent = 'Click to Copy';
 }
 
 function copy() {
@@ -163,4 +163,5 @@ document.getElementsByClassName('nightModeToggle')[0].addEventListener('click', 
     });
     result.classList.toggle('resultTextNM');
     calculation.classList.toggle('calculationNM');
+    document.body.classList.toggle('night-mode');
 })

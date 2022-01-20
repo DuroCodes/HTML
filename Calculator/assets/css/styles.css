@@ -17,6 +17,17 @@ body {
   animation: gradient 40s ease infinite;
 }
 
+body.night-mode {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-size: 800% 800%;
+  animation: gradient 40s ease infinite;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
