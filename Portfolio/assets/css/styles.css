@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/cs?family=Open+Sans&display=swap");
 :root {
-    --bg-color: #fff;
+    --bg-color: #eeeeee;
     --header-height: 3rem;
     --font-semi: 600;
     --first-color: #4070f4;
-    --second-color: #0e2431;
+    --second-color: #222831;
     --body-font: "Open Sans", sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
@@ -18,10 +18,25 @@
         --normal-font-size: 1rem;
     }
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
     :root {
-        --bg-color: #000000;
-        --second-color: #ffffff;
+        --bg-color: #222831;
+        --first-color: #ff5722;
+        --second-color: #eeeeee;
+    }
+    .home__img {
+        filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(120deg) brightness(111%) contrast(87%);
+    }
+    .skills__img {
+        filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(120deg) brightness(111%) contrast(87%);
+    }
+}
+@media (prefers-color-scheme: light) {
+    .home__img {
+        filter: invert(11%) sepia(18%) saturate(783%) hue-rotate(176deg) brightness(100%) contrast(90%);
+    }
+    .skills__img {
+        filter: invert(11%) sepia(18%) saturate(783%) hue-rotate(176deg) brightness(100%) contrast(90%);
     }
 }
 :root {
@@ -310,6 +325,17 @@ img {
 }
 .work__img img:hover {
     transform: scale(1.1);
+}
+.work__img h3 {
+    border-radius: 10%;
+    color: #fff;
+    text-shadow: 2px 2px #111;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .contact__input {
     width: 100%;
