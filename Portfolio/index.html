@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Duro</a>
+            </div>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- Home Page -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi, <br>I'm <span class="home__title-color">Duro</span></br></h1>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+            <div class="home__social">
+                <a href="https://discordapp.com/users/283312847478325251" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-discord-alt'></i></a>
+                <a href="https://github.com/DuroGFX" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+            <div class="home__img">
+                <img src="assets/images/welcome.png">
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="bd-grid about__container bd-grid">
+                <div>
+                    <p class="about__text">I'm an amateur developer focused on front and back end
+                        development. I work in many projects — I'm currently working on JavaScript development and
+                        implementing TypeScript into my personal projects. I've worked with Python, Java, HTML and CSS previously as well.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Development Skills</h2>
+                    <p class="skills__text">My skills in various programming languages and frameworks.</p>
+                    <div class="skills__data">
+                        <div class="skills_names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills-name">JavaScript</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills_names">
+                            <i class='bx bxl-python skills__icon'></i>
+                            <span class="skills-name">Python</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                        <div class="skills__bar skills__python"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills_names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills-name">CSS3</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                        <div class="skills__bar skills__css"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills_names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills-name">HTML5</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                        <div class="skills__bar skills_x_html"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills_names">
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills-name">Java</span>
+                        </div>
+                        <div>
+                            <span class="skills__percentage">60%</span>
+                        </div>
+                        <div class="skills__bar skills__java"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/images/skills.png" class="skills__img">
+                </div>
+            </div>
+        </section>
+        <section class="work section" id="work">
+            <h2 class="section-title">Previous Work</h2>
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <a href="https://github.com/DuroGFX/Links"><img src="assets/images/links.png"></a>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <a href="mailto:durometergfx@gmail.com" class="button"
+                style="display: block; margin-left: auto; margin-right: auto; width: 40%; text-align: center;">Email</a>
+        </section>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- JavaScript -->
+        <script src="assets/js/main.js"></script>
+    </main>
+</body>
+
+</html>
