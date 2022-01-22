@@ -14,12 +14,14 @@ function linkAction() {
     document.getElementById("nav-menu").classList.remove("show");
 }
 navLink.forEach((e) => e.addEventListener("click", linkAction));
+
 const sr = ScrollReveal({
     origin: "top",
     distance: "80px",
     duration: 2e3,
     reset: !0,
 });
+
 sr.reveal(".home__title", {});
 sr.reveal(".button", { delay: 200 });
 sr.reveal(".home__img", { delay: 400 });
