@@ -1,4 +1,4 @@
-/*==================== CLOCK ====================*/
+// Clock
 const hour = document.getElementById('clock-hour'),
     minutes = document.getElementById('clock-minutes'),
     seconds = document.getElementById('clock-seconds')
@@ -17,7 +17,7 @@ const clock = () => {
 }
 setInterval(clock, 1000) // 1000 = 1s
 
-/*==================== CLOCK & DATE TEXT ====================*/
+// Text
 const textHour = document.getElementById('text-hour'),
     textMinutes = document.getElementById('text-minutes'),
     textAmPm = document.getElementById('text-ampm'),
